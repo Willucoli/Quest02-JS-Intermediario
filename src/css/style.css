@@ -1,0 +1,92 @@
+.main{
+    background-image: url(../images/bg-repeat.jpg);
+    background-position: center;
+    background-size: 65px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+}
+
+.main .conteudo{
+    max-width: 300px;
+
+}
+
+.main .conteudo .titulo{
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    padding-bottom: 11px;
+}
+.main .conteudo .texto{
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.main .formularios{
+    background-color: #ffffff;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    
+}
+.main .formularios .formulario{
+    margin-bottom: 15px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left:9px;
+    border: 1px solid;
+    
+}
+
+.main .formularios .formulario.estilo{
+    height: 100px;
+    display: flex;
+    
+}
+
+.main .formularios .campoObrigatorio{
+    font-size: 8px;
+    color:red;
+    opacity: 0;
+    margin-top: -14px;
+    margin-bottom: 7px;
+}
+
+.main .formularios #btn{
+    background-color: #3CCC87;
+    color: #ffffff;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    margin: 11px 0 2px 0;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main .formularios .formulario.obrigatorioNaoPrenchido{
+    border: 1px solid #F52E2E;
+
+}
+.main .formularios .formulario.obrigatorioPrenchido{
+    border: 1px solid #00C22B
+    ;
+
+}
+
+.main .formularios .campoObrigatorio.campoAparecer{
+    opacity: 1;
+}
+
+@media (max-width: 700px){
+    .main{
+        flex-direction: column;
+    }
+
+}
